@@ -2,7 +2,7 @@
   "name": "tech-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zachary-sutton.github.io/ecommerce-dashboard",
+  "homepage": "https://zachary-sutton.github.io/ecommerce-dashboard/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
