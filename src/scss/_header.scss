@@ -1,0 +1,48 @@
+#header{
+    background-color: $col5;
+    font-family: $primary-font;
+
+    input{
+        /* general */
+        font-size: 16px;
+        padding: 1rem 2rem;
+        /* width animation */
+        width: 10%;
+        transition: width 0.4 ease-in-out;
+        -webkit-transition: width 0.4s ease-in-out;
+        /* border settings */
+        border-radius: 4px;
+        border: 2px solid #ccc;
+        /* magnify glass settings */
+        background-color: white;
+        background-image: url('https://clipartart.com/images/free-search-icon-clipart-4.png');
+        background-size: 1rem 1rem;
+        background-position: 5px; 
+        background-repeat: no-repeat;
+        
+
+        &:focus{
+            width: 30%;
+        }
+    }
+
+    .logo{
+        height: 5rem;
+        width: auto;
+    }
+
+    .paypal{
+        height: 3rem!important;
+    }
+
+    input{
+        height: 50%;
+    }
+
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        align-items: center;
+    }
+}

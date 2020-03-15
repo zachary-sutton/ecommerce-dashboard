@@ -1,0 +1,22 @@
+#nav{
+    display: flex;
+    justify-content: center;
+    background-color: $col3;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: $primary-font;
+    border-top: 1px solid grey;
+
+    ul{
+        list-style-type: none;
+        cursor: pointer;
+        li{
+            display: inline;
+            padding: 1rem 3rem;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,16 @@
+#alert{
+    background-color: $col2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid $col1;
+    border-bottom: 5px solid $col1;
+    color: white;
+    .alert-container{
+        padding: 0;
+        margin: 0;
+        h1{
+            padding: 0;
+        }
+    }
+}

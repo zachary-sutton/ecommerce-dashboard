@@ -1,0 +1,105 @@
+#invoice {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    /* Close Button*/
+    .button-container{
+        padding: 1rem 4rem 0 0rem;
+        .invoice-close{
+            cursor: pointer;
+            float: right;
+        }
+    }
+    /* Header Content */
+    img{
+        width: auto;
+        height: 7rem;
+    }
+    .invoice-header{
+        display: flex;
+        justify-content: space-between;
+        padding: 4rem;
+    }
+    /* Billing Address */
+    .billing-address{
+        display: flex;
+        justify-content: left;
+        padding: 0 4rem;
+        margin-bottom: 2rem;
+
+        table{
+            border-collapse: collapse;
+            width: 20%;
+            thead{
+                background-color: $col2;
+            }
+        }
+    }
+    /* Description, Qty & Price*/ 
+    .order-details{
+        display: flex;
+        justify-content: center;
+        padding: 0 4rem;
+        margin-bottom: 2rem;
+
+        table{
+            width: 100%!important;
+            border: 1px solid pink;
+            border-collapse: collapse;
+            thead{
+                background-color: $col2;
+            }
+        }
+        .desc-align{
+            width: 70%;
+        }
+        .qty-align{
+            width: 20%;
+        }
+        .total-align{
+            width: 10%;
+        }
+    }
+    /* Summary Section */
+    .summary-section{
+        display: flex;
+        justify-content: left;
+        padding: 0 4rem;
+        margin-bottom: 2rem;
+        table{
+            width: 100%;
+            border: 1px solid pink;
+            border-collapse: collapse;
+            thead{
+                background-color: $col2;
+            }
+        }
+        .desc-align{
+            width: 70%;
+        }
+        .qty-align{
+            color: red;
+            width: 20%;
+        }
+        .total-align{
+            width: 10%;
+        }
+    }
+    /* Footer */
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media print {
+    .invoice-close{
+        display: none;
+    }
+}
